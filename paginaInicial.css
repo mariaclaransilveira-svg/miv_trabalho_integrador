@@ -1,0 +1,219 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fffFff;
+            font-family: Arial, sans-serif;
+            color: #30243d;
+        }
+
+        .barraMenu {
+            width: 100%;
+            min-height: 70px;
+            padding: 10px 5%;
+            background-color: rgb(225, 134, 248);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 3px 5px #bbb;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #30243d;
+            text-decoration: none;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .menu button {
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+            color: #30243d;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+
+        .menu button:hover {
+            background-color: #eeeaf2;
+        }
+
+        main {
+            width: 100%;
+            padding: 50px 5%;
+        }
+
+        .categoria {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .tituloCategoria {
+            font-size: 25px;
+            margin-bottom: 20px;
+            color: #30243d;
+        }
+
+        .historias {
+            width: 100%;
+            display: flex;
+            gap: 25px;
+            overflow-x: auto;
+            padding: 10px 5px 20px;
+            scroll-behavior: smooth;
+        }
+
+        .historias::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .historias::-webkit-scrollbar-track {
+            background: #e8e4eb;
+            border-radius: 10px;
+        }
+
+        .historias::-webkit-scrollbar-thumb {
+            background: #30243d;
+            border-radius: 10px;
+        }
+
+        .historia {
+            flex: 0 0 180px;
+            height: 250px;
+            background-color: #3d3547;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.2s;
+            overflow: hidden;
+        }
+
+        .historia:hover {
+            background-color: #332d3b;
+            transform: translateY(-5px);
+        }
+
+        .historia img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .barraMenu {
+                padding: 10px 4%;
+            }
+
+            .logo {
+                font-size: 28px;
+            }
+
+            .menu {
+                gap: 5px;
+            }
+
+            .menu button {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+
+            main {
+                padding: 40px 4%;
+            }
+
+            .tituloCategoria {
+                font-size: 22px;
+            }
+
+            .historias {
+                gap: 18px;
+            }
+
+            .historia {
+                flex-basis: 160px;
+                height: 230px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .barraMenu {
+                min-height: 60px;
+                padding: 8px 4%;
+            }
+
+            .logo {
+                font-size: 24px;
+            }
+
+            .menu {
+                gap: 2px;
+            }
+
+            .menu button {
+                font-size: 12px;
+                padding: 7px 8px;
+            }
+
+            main {
+                padding: 30px 4%;
+            }
+
+            .categoria {
+                margin-bottom: 35px;
+            }
+
+            .tituloCategoria {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            .historias {
+                gap: 15px;
+                padding-bottom: 15px;
+            }
+
+            .historia {
+                flex-basis: 140px;
+                height: 210px;
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .barraMenu {
+                padding: 8px 3%;
+            }
+
+            .logo {
+                font-size: 21px;
+            }
+
+            .menu button {
+                font-size: 11px;
+                padding: 6px;
+            }
+
+            .historia {
+                flex-basis: 125px;
+                height: 190px;
+            }
+        }

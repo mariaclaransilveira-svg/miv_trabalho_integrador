@@ -1,0 +1,15 @@
+.step-indicator { gap: 0; counter-reset: step-counter; }
+.step-item {
+  flex: 1;
+  text-align: center;
+  padding: .5rem;
+  font-size: .85rem;
+  color: #6c757d;
+  border-bottom: 3px solid #dee2e6;
+  transition: border-color .3s, color .3s;
+}
+.step-item.active {
+  color: var(--bs-primary);
+  border-bottom-color: var(--bs-primary);
+  font-weight: 600;
+}

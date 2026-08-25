@@ -1,0 +1,98 @@
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    min-height: 100vh;
+}
+
+.grid_esquerda {
+    background-image: url(telaLoginV5.jpg);
+    background-size: cover;
+    width: 50vw;
+    height: 100vh;
+}
+
+.grid_direita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 40vw;
+    height: 60vh;
+}
+
+.card a.voltar {
+    align-self: flex-end;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.form-control {
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2.5px solid grey;
+    width: 230px;
+    height: 55px;
+    color: gray;
+}
+
+.btn {
+    width: 230px;
+    height: 50px;
+    background-color: rgb(166, 97, 197);
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(128, 56, 128);
+    width: 240px;
+    height: 55px;
+}
+.fa-regular fa-hand-point-left{
+    width: 20vh;
+    height: 10vh;
+}
+@media (max-width: 765px) {
+    .grid_container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid_esquerda {
+        display: none; 
+    }
+
+    .grid_direita {
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}

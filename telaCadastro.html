@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link href="styles_cadastro.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="form">
+        <div class="header">
+            <h2>Crie uma conta</h2>
+            <a href="index.html" class="voltar">
+                    <i class="fa-regular fa-hand-point-left fa-2x"></i>
+                </a>
+        </div>
+        <div class="body">
+            <div class="pagination">
+                <div class="number active">1</div>
+                <div class="bar"></div>
+                <div class="number">2</div>
+                <div class="bar"></div>
+                <div class="number">3</div>
+                <div class="bar"></div>
+                <div class="number">4</div>
+                <div class="bar"></div>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <h4>Informações pessoais:</h4>
+                    <p>Insira os seus dados corretamente:</p>
+                    <div class="grid">
+                        <div class="col">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="col">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="col">
+                            <label for="pronoums">Pronomes</label>
+                            <select id="pronoums">
+                                <option value="Ela/Dela">Ela/Dela</option>
+                                <option value="Ele/Dele">Ele/Dele</option>
+                                <option value="Elu/Delu">Elu/Delu</option>
+                                <option value="Prefiro nao informar">Prefiro não informar</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="data_nascimento">Data de nascimento:</label>
+                            <input type="date" id="data_nascimento">
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <h4>Áreas de interesse</h4>
+                    <p>Selecione os seus conteúdos de interesse</p>
+                    <div class="grid">
+                        <div class="col">
+                            <div class="checkbox">
+                                <input type="checkbox" id="interest_romance">
+                                <label for="interest_romance">Romance</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="checkbox">
+                                <input type="checkbox" id="interest_mistery">
+                                <label for="interest_mistery">Mistério</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="checkbox">
+                                <input type="checkbox" id="interest_comedy">
+                                <label for="interest_comedy">Comédia</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="checkbox">
+                                <input type="checkbox" id="interest_scienceFiction">
+                                <label for="interest_scienceFiction">Ficção científica</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="checkbox">
+                                <input type="checkbox" id="interest_fantasy">
+                                <label for="interest_fantasy">Fantasia</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="checkbox">
+                                <input type="checkbox" id="interest_poetry">
+                                <label for="interest_poetry">Poesia</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="checkbox">
+                                <input type="checkbox" id="interest_historicalFiction">
+                                <label for="interest_historicalFiction">Ficção Histórica</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="checkbox">
+                                <input type="checkbox" id="interest_adventure">
+                                <label for="interest_adventure">Aventura</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="checkbox">
+                                <input type="checkbox" id="interest_horror">
+                                <label for="interest_horror">Terror</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="checkbox">
+                                <input type="checkbox" id="interest_magicalCreatures">
+                                <label for="interest_magicalCreatures">Criaturas Mágicas</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="checkbox">
+                                <input type="checkbox" id="interest_nonFiction">
+                                <label for="interest_nonFiction">Não ficção</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="checkbox">
+                                <input type="checkbox" id="interest_shortStories">
+                                <label for="interest_shortStories">Histórias Curtas</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="checkbox">
+                                <input type="checkbox" id="interest_dystopia">
+                                <label for="interest_dystopia">Distopia</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <h4>Proteja a sua conta</h4>
+                    <div class="grid">
+                        <div class="col">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password">
+                        </div>
+                        <div class="col">
+                            <label for="retype-password"> Confirme a Senha</label>
+                            <input type="password" id="retype-password">
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="confirmation">
+                        <h2>Crie a sua conta</h2>
+                        <div>
+                            <button><a href="paginaInicial.html">Criar conta</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="footer">
+            <button class="prev" disabled>Voltar</button>
+            <button class="next">Próximo</button>
+        </div>
+    </div>
+     <script src="script_cadastro.js" defer></script>
+</body>
+
+</html>
