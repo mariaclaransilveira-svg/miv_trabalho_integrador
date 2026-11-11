@@ -7,7 +7,4 @@
 </head>
 <body>
 </body>
-<?php 
-if(isset($GET['nome_livro']))
-?>
 </html>
